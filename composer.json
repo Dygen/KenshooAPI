@@ -17,10 +17,10 @@
     },
     "autoload": {
         "classmap": [
-          "src/Dygen/Kenshoo"
+          "src/Dygen/KenshooAPI"
         ],
         "psr-0": {
-            "Dygen\\Kenshoo\\": "src/"
+            "Dygen\\Kenshooapi\\": "src/"
         }
      }
 }
