@@ -16,9 +16,6 @@
         "codedungeon/phpunit-result-printer": "^0.3.0"
     },
     "autoload": {
-        "classmap": [
-          "src/Dygen/KenshooAPI"
-        ],
         "psr-0": {
             "Dygen\\Kenshooapi\\": "src/"
         }
