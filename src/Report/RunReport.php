@@ -1,10 +1,10 @@
 <?php
 
-namespace Kenshoo\Report;
+namespace KenshooAPI\Report;
 
 use Exception;
-use Kenshoo\Query;
-use Kenshoo\Configuration;
+use KenshooAPI\Query;
+use KenshooAPI\Configuration;
 
 /**
  *  Run a specified report.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kenshoo;
+namespace KenshooAPI;
 
 use Exception;
 use GuzzleHttp\Client;

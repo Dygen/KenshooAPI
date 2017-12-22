@@ -1,6 +1,6 @@
 <?php
 
-namespace Kenshoo;
+namespace KenshooAPI;
 
 /**
  * Configuration for the Kenshoo API.

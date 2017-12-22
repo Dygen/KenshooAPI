@@ -1,10 +1,10 @@
 <?php
 
-namespace Kenshoo;
+namespace KenshooAPI;
 
-use Kenshoo\Report\RunReport;
-use Kenshoo\Report\GetReport;
-use Kenshoo\Report\ReportList;
+use KenshooAPI\Report\RunReport;
+use KenshooAPI\Report\GetReport;
+use KenshooAPI\Report\ReportList;
 
 /**
  *  An interface for the Kenshoo API.

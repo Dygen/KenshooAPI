@@ -1,9 +1,9 @@
 <?php
 
-namespace Kenshoo\Report;
+namespace KenshooAPI\Report;
 
-use Kenshoo\Query;
-use Kenshoo\Configuration;
+use KenshooAPI\Query;
+use KenshooAPI\Configuration;
 
 /**
  * Get a list of reports available.
