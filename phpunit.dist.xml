@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<phpunit bootstrap="vendor/autoload.php" printerClass="Codedungeon\PHPUnitPrettyResultPrinter\Printer">
+  <testsuites>
+    <testsuite name="Kenshoo">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+   <env name="USERNAME" value=""/>
+   <env name="PASSWORD" value=""/>
+   <env name="KS" value=""/>
+    <env name="REPORTID" value=""/>
+  </php>
+</phpunit>

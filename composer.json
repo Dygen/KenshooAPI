@@ -1,0 +1,23 @@
+{
+    "name": "dygen/kenshoo",
+    "description": "An interface to the kenshoo api",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "authors": [
+        {
+            "name": "Wes Hulette",
+            "email": "jwhulette@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "6.*",
+        "codedungeon/phpunit-result-printer": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kenshoo\\": "src/"
+        }
+    }
+}
