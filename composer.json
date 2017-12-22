@@ -1,6 +1,6 @@
 {
-    "name": "dygen/kenshoo",
-    "description": "An interface to the kenshoo api",
+    "name": "dygen/kenshooapi",
+    "description": "An simple PHP interface to the kenshoo reporting api",
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^6.2"
