@@ -2,16 +2,22 @@
 
 namespace KenshooAPI;
 
+use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
 
 class KenshooTest extends TestCase
 {
+    private $start;
+    private $end;
+
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
     protected function setUp()
     {
+        $this->start = Carbon::yesterday()->format('Y-m-d');
+        $this->end = $this->start;
     }
 
     /**
@@ -87,7 +93,7 @@ class KenshooTest extends TestCase
         sleep(5);
         $report = $ks->reportRun()
             ->setReportId(getenv('REPORTID'))
-            ->setDateRange('2016-12-01', '2016-12-02')
+            ->setDateRange('2018-01-31', '2018-01-31')
             ->runReport();
 
         $data = $report->getReport();
