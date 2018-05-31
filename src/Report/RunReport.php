@@ -170,6 +170,8 @@ class RunReport
      *
      * @param string $file The file to extract
      *
+     * @throws Exception
+     *
      * @return array The CSV file contents as an array
      */
     private function extractData($file)
@@ -177,8 +179,7 @@ class RunReport
         $zip = new \ZipArchive();
         if (true === $zip->open($file)) {
             $name          = $zip->getNameIndex(0);
-            $info          = new \SplFileInfo($file);
-            $extractFolder = sys_get_temp_dir().uniqid();
+            $extractFolder = sys_get_temp_dir();
             $fileName      = $extractFolder.'/'.$name;
             $zip->extractTo($extractFolder);
             $zip->close();
