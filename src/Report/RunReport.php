@@ -179,7 +179,10 @@ class RunReport
         $zip = new \ZipArchive();
         if (true === $zip->open($file)) {
             $name          = $zip->getNameIndex(0);
-            $extractFolder = sys_get_temp_dir();
+            $extractFolder = sys_get_temp_dir() . '/' . time();
+            if (!is_dir($extractFolder)) {
+                mkdir($extractFolder);
+            }
             $fileName      = $extractFolder.'/'.$name;
             $zip->extractTo($extractFolder);
             $zip->close();
